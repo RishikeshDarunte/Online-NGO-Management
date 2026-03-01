@@ -1,0 +1,56 @@
+# ===== Build Results =====
+bin/
+obj/
+
+# ===== User-specific files =====
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===== Visual Studio =====
+.vs/
+*.rsuser
+
+# ===== Debug / Release =====
+Debug/
+Release/
+x64/
+x86/
+AnyCPU/
+
+# ===== Logs =====
+*.log
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Rider =====
+.idea/
+
+# ===== VS Code =====
+.vscode/
+
+# ===== NuGet =====
+*.nupkg
+packages/
+project.lock.json
+
+# ===== ASP.NET =====
+wwwroot/lib/
+appsettings.Development.json
+
+# ===== Test Results =====
+TestResults/
+
+# ===== Database =====
+*.mdf
+*.ldf
+
+# ===== Publish =====
+publish/
+
+API.txt
+.env
+appsettings.Development.json
