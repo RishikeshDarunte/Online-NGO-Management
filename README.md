@@ -173,7 +173,8 @@ Debug → Start (F5)
 <img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/45383bfc-d6aa-4106-ad8f-2c89294328b7" />
 
 ### 🛡️ Admin Dashboard
-<img width="1920" height="1080" alt="Admin" src="https://github.com/user-attachments/assets/dd44312e-dcb0-4fb7-b711-ae4b0ac540b5" />
+<img width="1919" height="878" alt="Admin DashBoard" src="https://github.com/user-attachments/assets/b7251426-6a60-4cdf-94aa-5cb6c9aa9313" />
+
 
 ### 📊 Donor Dashboard
 <img width="1920" height="1080" alt="NGO Dashboard" src="https://github.com/user-attachments/assets/d13c96c2-fd76-4952-b1ed-3091bbe34d5a" />
