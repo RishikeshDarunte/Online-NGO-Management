@@ -164,19 +164,23 @@ Debug → Start (F5)
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-> *(Add Screenshot)*
+<img width="1920" height="1080" alt="Home" src="https://github.com/user-attachments/assets/f6e9a7e8-4957-4ebe-b130-7ee1f3e0f4a4" />
 
 ### 📝 NGO Registration
-> *(Add Screenshot)*
+<img width="1920" height="1080" alt="Registration" src="https://github.com/user-attachments/assets/9d3e08a4-4775-43ae-b389-36ea3d85941a" />
 
-### 📊 Donor Dashboard
-> *(Add Screenshot)*
+### 🔑 Login Page
+<img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/45383bfc-d6aa-4106-ad8f-2c89294328b7" />
 
 ### 🛡️ Admin Dashboard
-> *(Add Screenshot)*
+<img width="1920" height="1080" alt="Admin" src="https://github.com/user-attachments/assets/dd44312e-dcb0-4fb7-b711-ae4b0ac540b5" />
 
-### 💳 Donation Management
-> *(Add Screenshot)*
+### 📊 Donor Dashboard
+<img width="1920" height="1080" alt="NGO Dashboard" src="https://github.com/user-attachments/assets/d13c96c2-fd76-4952-b1ed-3091bbe34d5a" />
+
+### 💳 Donation Page
+<img width="1920" height="1080" alt="Donation Page" src="https://github.com/user-attachments/assets/738dbd38-6d5b-4f3e-a27c-2886f7ae33f8" />
+
 
 ---
 
@@ -203,7 +207,7 @@ Debug → Start (F5)
 
 ## 📄 License
 
-This project is developed for **academic and educational purposes** as part of the CDAC curriculum.
+This project is developed for **academic and educational purposes** as part of the DBATU curriculum.
 
 ---
 
