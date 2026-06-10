@@ -1,154 +1,210 @@
-# Donation Management System
+# 🌐 Online NGO Management System
 
-## 📌 Introduction
-The **Donation Management System** is a web-based application designed to manage and streamline the donation process between **donors**, **volunteers**, and **administrators**.  
-The system helps NGOs efficiently track donations, manage users, and maintain transparency in donation activities.
+> A centralized web platform for NGO verification, donor management, donation tracking, and administrative oversight — built to bring transparency and accountability to non-profit operations.
 
-This project is developed as part of an **academic / internship project** using web technologies.
+![ASP.NET](https://img.shields.io/badge/ASP.NET-Web_Forms-512BD4?style=flat-square&logo=dotnet)
+![CSharp](https://img.shields.io/badge/C%23-.NET_Framework-239120?style=flat-square&logo=csharp)
+![SQL Server](https://img.shields.io/badge/Database-SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver)
+![Visual Studio](https://img.shields.io/badge/IDE-Visual_Studio_2022-5C2D91?style=flat-square&logo=visualstudio)
+![License](https://img.shields.io/badge/License-Academic-orange?style=flat-square)
+
+---
+
+## 📌 Overview
+
+The **Online NGO Management System** is a web-based application developed using **ASP.NET Web Forms**, **C#**, and **SQL Server**. It provides a centralized platform for:
+
+- ✅ NGO registration and administrator verification
+- ✅ Donor registration, login, and donation management
+- ✅ Transparent donation tracking and history
+- ✅ Volunteer registration management
+- ✅ Admin monitoring, reporting, and system control
+
+The system bridges the gap between NGOs and donors by ensuring that only **verified NGOs** can receive donations, improving trust, transparency, and accountability across the board.
+
+---
+
+## ✨ Features
+
+### 🏢 NGO Module
+| Feature | Description |
+|---|---|
+| NGO Registration | NGOs can create and register their organization profile |
+| Profile Management | Update and maintain NGO details |
+| Verification Request | Submit verification requests to the administrator |
+| View Verification Status | Track the current approval status in real time |
+
+### 🙋 Donor Module
+| Feature | Description |
+|---|---|
+| Registration & Login | Secure donor account creation and authentication |
+| Profile Management | Manage personal and donation preferences |
+| Browse Verified NGOs | Discover and explore administrator-approved NGOs |
+| Make Donations | Donate directly to a chosen verified NGO |
+| Donation History | View complete record of past donations |
+
+### 🛡️ Admin Module
+| Feature | Description |
+|---|---|
+| Secure Login | Protected administrator access |
+| NGO Verification | Review, approve, or reject NGO verification requests |
+| Manage NGOs & Donors | Full CRUD control over registered entities |
+| Monitor Donations | Track all donation transactions in the system |
+| Generate Reports | Export and view system-wide reports |
+| System Management | Oversee platform settings and user management |
+
+### 💰 Donation Management
+- End-to-end **donation tracking**
+- Comprehensive **donation records** management
+- **Transaction monitoring** for administrators
+- **Full donation history** accessible to donors
+
+### 🔒 Security Features
+- User **Authentication** (login/logout)
+- **Role-Based Access Control** (Admin / NGO / Donor)
+- Secure **Data Management** with validation
+- Input **Validation and Verification** across all forms
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | ASP.NET Web Forms, HTML, CSS, JavaScript |
+| **Backend** | C# (.NET Framework) |
+| **Database** | SQL Server (SSMS) |
+| **IDE** | Visual Studio 2022 |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 🗂️ System Modules
+
+```
+Online NGO Management System
+│
+├── 1. NGO Registration and Verification
+├── 2. Donor Management
+├── 3. Donation Management
+├── 4. Volunteer Management
+├── 5. Admin Dashboard
+└── 6. Reporting and Monitoring
+```
 
 ---
 
 ## 🎯 Project Objectives
-- To create a centralized platform for donation management  
-- To simplify the process of donating money or items  
-- To manage donors, volunteers, and admins effectively  
-- To reduce manual work and paperwork  
-- To ensure transparency and proper record maintenance  
+
+- 📂 **Digitize** NGO management processes to eliminate manual paperwork
+- 🔍 **Provide transparency** in the donation platform
+- ✅ **Enable NGO verification** before accepting any donations
+- 🤝 **Improve donor trust** and organizational accountability
+- 📉 **Reduce manual record-keeping** through centralized data management
 
 ---
 
-## 👥 User Roles & Responsibilities
+## ⚙️ Installation
 
-### 1️⃣ Admin
-- Login securely
-- View all donors and volunteers
-- Manage donation records
-- Update or delete user information
-- Monitor system activities
+### Prerequisites
 
-### 2️⃣ Donor
-- Register and login
-- Donate money or items
-- View donation history
-- Update personal profile
+Make sure the following are installed on your system:
 
-### 3️⃣ Volunteer
-- Register and login
-- View assigned donation tasks
-- Assist in donation management
-- Update task status
+- [Visual Studio 2022](https://visualstudio.microsoft.com/)
+- [.NET Framework](https://dotnet.microsoft.com/)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 
----
+### Setup Steps
 
-## 🛠️ Technologies Used
+**1. Clone the repository**
+```bash
+git clone https://github.com/RishikeshDarunte/Online-NGO-Management.git
+```
 
-### Frontend
-- HTML
-- CSS
-- Bootstrap
+**2. Open the solution in Visual Studio**
+```
+File → Open → Project/Solution → select the .sln file
+```
 
-### Backend
-- PHP
+**3. Create the database in SSMS**
+```sql
+CREATE DATABASE ngo_management;
+```
 
-### Database
-- MySQL
+**4. Import the database script**
+```
+Open the provided .sql script in SSMS and execute it to create all required tables and seed data.
+```
 
-### Server
-- XAMPP / WAMP (Apache + MySQL)
+**5. Update the connection string**
 
----
+Open `Web.config` and update the connection string:
+```xml
+<connectionStrings>
+  <add name="NGOConnectionString"
+       connectionString="Data Source=localhost;Initial Catalog=ngo_management;Integrated Security=True;"
+       providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
 
-## 📂 Project Directory Structure
+> **Note:** If using SQL Server Authentication instead of Windows Authentication, use:
+> ```
+> Data Source=localhost;Initial Catalog=ngo_management;User Id=sa;Password=yourpassword;
+> ```
 
-
----
-
-## 🗄️ Database Details
-
-- **Database Name:** `ngo`
-- **Database Type:** MySQL
-- **Tables Include:**
-  - admin
-  - donor
-  - volunteer
-  - donation
-  - login
+**6. Build and run the project**
+```
+Build → Build Solution (Ctrl + Shift + B)
+Debug → Start (F5)
+```
 
 ---
 
-## ⚙️ How to Set Up the Project
+## 📸 Screenshots
 
-### Step 1: Install XAMPP / WAMP
-Download and install:
-- XAMPP: https://www.apachefriends.org/
+### 🏠 Home Page
+> *(Add Screenshot)*
 
----
+### 📝 NGO Registration
+> *(Add Screenshot)*
 
-### Step 2: Copy Project Files
-Move the project folder to:
+### 📊 Donor Dashboard
+> *(Add Screenshot)*
 
----
+### 🛡️ Admin Dashboard
+> *(Add Screenshot)*
 
-### Step 3: Start Server
-Open XAMPP Control Panel and start:
-- Apache
-- MySQL
-
----
-
-### Step 4: Database Configuration
-1. Open browser and go to:
-2. Create a database named:
-3. Import the SQL file:
-     
-
----
-
-### Step 5: Run the Project
-Open browser and visit:
-
-
----
-
-## ✅ Key Features
-- Secure login system
-- Role-based access control
-- Donation record management
-- CRUD operations (Create, Read, Update, Delete)
-- Responsive UI using Bootstrap
-- Session-based authentication
-
----
-
-## 🔐 Security Measures
-- Session management for authentication
-- Role-based authorization
-- Secure database interaction using PDO
-- Input validation to prevent errors
-
----
-
-## 🧪 Testing
-- Tested on Google Chrome
-- Tested using XAMPP server
-- Manual testing for all user roles
+### 💳 Donation Management
+> *(Add Screenshot)*
 
 ---
 
 ## 🚀 Future Enhancements
-- Online payment gateway integration
-- Email and SMS notifications
-- NGO verification module
-- Donation analytics dashboard
-- Mobile-friendly UI improvements
+
+| Enhancement | Description |
+|---|---|
+| 💳 Online Payment Gateway | Integrate Razorpay / PayPal for real-time online payments |
+| 📩 Email & SMS Notifications | Automated alerts for donations, verification status, and updates |
+| 📱 Mobile Application | Native Android/iOS companion app |
+| 📈 Advanced Analytics Dashboard | Visual charts and metrics for admins and NGOs |
+| 📡 Real-Time Donation Tracking | Live donation feeds and progress bars |
+| 📋 NGO Performance Reports | Impact reports and outcome summaries per NGO |
 
 ---
 
-## 👨‍💻 Developer Details
-**Name:** Rishikesh Pandharinath Darunte  
+## 👨‍💻 Author
+
+**Rishikesh Darunte**
+
+[![GitHub](https://img.shields.io/badge/GitHub-RishikeshDarunte-181717?style=flat-square&logo=github)](https://github.com/RishikeshDarunte)
+
 ---
 
-## 📜 License
-This project is developed for **educational purposes only**.  
-Commercial use is not permitted without permission.
+## 📄 License
 
+This project is developed for **academic and educational purposes** as part of the CDAC curriculum.
+
+---
+
+> *"Transparency builds trust. Technology enables transparency."*
